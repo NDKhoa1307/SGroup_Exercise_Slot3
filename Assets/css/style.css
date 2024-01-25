@@ -1,0 +1,350 @@
+html{
+    scroll-behavior: smooth;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header */
+.header_container{
+    background-color: white;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0px;
+}
+
+.header_bar{
+    width: 60%;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signature{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.signature__logo{
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.signature__name{
+    color: black;
+}
+
+.ref{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+
+
+/* Container */
+.container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contents{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Core components that can be reused throughout the code */
+.title{
+    font-size: 8px;
+    color: black;
+    border-bottom: #f26666 solid 2px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    max-width: fit-content;
+}
+
+
+/* Introduction */
+.introduction{
+    display: flex;
+    gap: 70px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.intro__img{
+    width: 200px;
+    height: 230px;
+}
+
+.intro__text{
+    max-width: 50%;
+}
+
+.intro__text h2{
+    margin: 0px;
+}
+
+.intro__skills{
+    margin-top: 35px;
+    display: flex;
+    gap: 1.5em;
+}
+
+.intro__skill p{
+    margin: 0px;
+    font-size: xx-small;
+}
+
+.intro__skill h3{
+    color: #F26464;
+    margin: 0px;
+}
+
+.intro__skill {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* About */
+.about{
+    margin-top: 20px;
+}
+
+
+.about .about__content{
+    font-size: 12px;
+}
+
+.about .download__resume{
+    width: 150px;
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: calc(50% - 75px);
+    border-radius: 19px;
+    color:#f26666;
+    padding: 8px 20px;
+    border: 1px solid #f26666;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.about .download__resume:hover{
+    transition: 800ms;
+    background-color: #f26666;
+    color:white;
+}
+
+
+
+/* Skills */
+/* Reuseable components */
+.skills__list{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills_bubble{
+    list-style-type: none;
+    font-size: 10px;
+    width: fit-content;
+    padding: 3px 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 20px;
+    margin-right: 2px;
+    margin-bottom: 6px;
+}
+
+/* Classes */
+.skills{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0px;
+}
+
+.core_skills{
+    max-width: calc(50% - 10px); 
+}
+
+.other_skills{
+    max-width: calc(50% - 10px); 
+}
+
+/* Work experience */
+.work_experiece{
+    width: 100%;
+}
+
+.position{
+    width: 48%;
+    height: auto;
+}
+
+.position__jd{
+    font-size: 10px;
+}
+
+.position__jd ul{
+    padding-left: 8px;
+}
+
+.position__jd li{
+    list-style-position: outside;
+    padding-left: 8px;
+}
+
+.position__time{
+    margin-bottom: 0px;
+    font-size: 8px;
+    color: #373737;
+    font-weight: 700; 
+    font-family: 'Inter', sans-serif;
+}
+
+.position__company{
+    color: #575757;
+    margin: 4px 0px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+}
+
+.position__title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #373737;
+    font-weight: 700;
+    font-size: 8px;
+    font-family: 'Inter', sans-serif;
+}
+
+.positions{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* Latest works */
+.latest_work{
+    background-color: #f6f8fa;
+    
+    max-width: 100%;
+    height: auto;
+    
+    max-height: 200px;
+    padding: 20px 40px 0px 40px;
+    margin-bottom: 25px;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    overflow: scroll;
+}
+
+.latest_work__content{
+    font-size: 12px;
+    max-width: 50%;
+    max-height: 50%;
+    margin-bottom: 100px;
+}
+
+.latest_work__img{
+    height: 200px;
+    width: 200px;
+}
+
+.latest_work__more_detailed{
+    font-size: 8px;
+    border-radius: 19px;
+    color:#f26666;
+    padding: 8px 20px;
+    border: 1.7px solid #f26666;
+    background-color: white;
+    margin-top: 20px;
+    font-weight: 550;
+}
+
+.latest_work__more_detailed:hover{
+    background-color:#f26666;
+    color:#f6f8fa;
+    transition: 500ms;
+}
+
+/* Footer */
+.footer{
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer__content{
+    margin: 0px;
+}
+
+.footer__content-1{
+    color: #808080;
+    margin-bottom: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer__content-2{
+    margin: 0;
+    font-size: 30px;
+    font-style: normal;
+}
+
+.footer__content-3{
+    margin: 0;
+    font-size: 10px;
+    font-style: normal;
+}
+
+.footer__button{
+    font-size: 9px;
+    border-radius: 19px;
+    color:#f26666;
+    padding: 8px 20px;
+    border: 1.7px solid #f26666;
+    background-color: inherit;
+    margin-top: 20px;
+    font-weight: 550;
+}
+
+.footer__button:hover{
+    background-color:#f26666;
+    color:#f6f8fa;
+    transition: 500ms;
+}
+
+.footer__content-4{
+    margin-top: 50px;
+    font-size: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #6d6d6d;
+}
